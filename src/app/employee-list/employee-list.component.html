@@ -1,0 +1,19 @@
+<h2 class="fs-2 fw-semibold">Employee List</h2>
+<table class="table table-striped mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Email Id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <th scope="row">{{ employee.id }}</th>
+      <td>{{ employee.firstName }}</td>
+      <td>{{ employee.lastName }}</td>
+      <td>{{ employee.emailId }}</td>
+    </tr>
+  </tbody>
+</table>
